@@ -1,0 +1,83 @@
+/* home.component.css */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+  }
+  
+  li {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    width: 220px; /* Adjust the width as needed */
+    transition: background-color 0.3s ease; /* Adding transition effect for smoother hover */
+    position: relative; /* Relative positioning for absolute child */
+  }
+  
+  li:hover {
+    background-color: #f0f0f0; /* Change the background color on hover */
+  }
+  
+  img {
+    width: 120px; /* Adjust the width as needed */
+    height: auto;
+    margin-bottom: 10px; /* Add space between image and text */
+  }
+  
+  .content {
+    flex-grow: 1;
+    text-align: center; /* Center text */
+  }
+  
+  .name {
+    font-size: 1.4em; /* Slightly larger font size */
+    font-weight: bold;
+  }
+  
+  .favorite {
+    font-size: 1.2em; /* Slightly larger font size */
+    color: red;
+    margin-top: 5px; /* Adjust space between name and favorite icon */
+  }
+  
+  .favorite.not {
+    color: gray;
+  }
+  
+  .product-item-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px; /* Adjust space between footer and content */
+  }
+  
+  .origins {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .origins span {
+    margin-right: 5px;
+    padding: 3px 8px;
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+  
+  .cook-time {
+    display: flex;
+    align-items: center;
+  }
+  
+  .price {
+    font-size: 1.4em; /* Slightly larger font size */
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px; /* Adjust the bottom distance as needed */
+    right: 10px; /* Position on the right side */
+  }
+  
