@@ -4,11 +4,12 @@ import { FoodService } from '../../../services/food.service';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { FoodPageComponent } from '../food-page/food-page.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, FoodPageComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -27,6 +28,7 @@ export class HomeComponent implements OnInit {
   }
 
   navigateToFoodDetails(foodId: string): void {
+    console.log('Navigating to food details:', foodId);
     const numericFoodId: number = +foodId;
     this.router.navigate(['/food', numericFoodId]);
   }
