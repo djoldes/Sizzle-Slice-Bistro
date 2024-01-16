@@ -4,6 +4,17 @@
   <input type="text" placeholder="Search" [(ngModel)]="searchText" />
 </div>
 
+<div class="tags-bar">
+  <div *ngFor="let tag of displayedTags">
+    <button
+      [class.active]="selectedTags.includes(tag)"
+      (click)="toggleTag(tag)"
+    >
+      {{ tag }}
+    </button>
+  </div>
+</div>
+
 <ul>
   <li *ngFor="let food of filterFoods()">
     <img [src]="food.imageUrl" alt="{{ food.name }}">

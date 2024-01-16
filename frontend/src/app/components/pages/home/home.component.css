@@ -1,5 +1,25 @@
 /* home.component.css */
 
+.tags-bar {
+  display: flex;
+  justify-content: center; /* Center-align the tags */
+  margin-top: 20px;
+}
+
+.tags-bar button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Adding transition effect */
+}
+
+.tags-bar button.active {
+  background-color: #007bff; /* Change background color for active state */
+  color: #fff; /* Change text color for active state */
+}
+
 .search-bar {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -76,16 +96,27 @@ img {
 
 .origins {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* Keep items on a single line without wrapping */
+  overflow-x: auto; /* Add horizontal scrollbar if needed */
   margin-bottom: 5px; /* Add space between origins and cook-time */
 }
 
 .origins span {
   margin-right: 5px;
-  padding: 3px 8px;
-  background-color: #ddd;
+  padding: 8px;
+  background-color: #3498db;
   border-radius: 5px;
+  font-size: 0.9em;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
+
+.origins span:hover {
+  background-color: #2980b9;
+}
+
 
 .cook-time {
   display: flex;

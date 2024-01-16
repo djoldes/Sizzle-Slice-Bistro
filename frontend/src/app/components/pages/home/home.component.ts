@@ -16,6 +16,9 @@ export class HomeComponent implements OnInit {
   
   foods:Food[] = [];
   searchText: string = ''; //si asta e pt searchbar
+  selectedTags: string[] = [];//asta e pt tag bars
+  displayedTags: string[] = ['Fast Food', 'Main Course', 'Dessert'];
+
   constructor(private foodService:FoodService, private router:Router){
     this.foods = foodService.getAll();
   }
@@ -30,12 +33,45 @@ export class HomeComponent implements OnInit {
 
   //pt searchbar de aici in jos
   filterFoods(): Food[]{
-    if(!this.searchText){
-      return this.foods;
-    }
-    return this.foods.filter((food) => 
-      food.tags?.some((tag) => tag.toLowerCase().includes(this.searchText.toLowerCase()))
-      );
+    return this.foods.filter((food) => {
+      const matchesSearch = !this.searchText || food.tags?.some(tag => tag.toLowerCase().includes(this.searchText.toLowerCase()));
+      const matchesTags = this.selectedTags.length === 0 || food.tags?.some(tag => this.selectedTags.includes(tag));
+      return matchesSearch && matchesTags;
+    });
   }
   //pana aici
+  toggleTag(tag: string): void {
+    const index = this.selectedTags.indexOf(tag);
+    if (index !== -1) {
+      this.selectedTags.splice(index, 1);
+    } else {
+      this.selectedTags.push(tag);
+    }
+  }
+
+  getAllTags(): string[] {
+    const tagsSet = new Set<string>();
+    this.foods.forEach((food) => {
+      if (food.tags) {
+        food.tags.forEach((tag) => {
+          tagsSet.add(tag);
+        });
+      }
+    });
+    return Array.from(tagsSet);
+  }
+
+  getAllTagsFromFoods(foods: Food[]): string[] {
+    const tagsSet = new Set<string>();
+    foods.forEach((food) => {
+      tagsSet.add(food.name); // Add the food name as a tag
+      if (food.tags) {
+        food.tags.forEach((tag) => {
+          tagsSet.add(tag);
+        });
+      }
+    });
+    return Array.from(tagsSet);
+  }
+
 }

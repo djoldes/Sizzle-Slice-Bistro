@@ -12,7 +12,7 @@ export const sample_foods: Food[] = [
     origins: ['Italy'],
     stars: 4.5,
     imageUrl: 'assets/pizza.jpg',
-    tags: ['FastFood', 'Pizza', 'Lunch', 'italian'],
+    tags: ['Fast Food', 'pizza', 'italian'],
   },
   {
     id:'2',
@@ -23,7 +23,7 @@ export const sample_foods: Food[] = [
     origins: ['Florence', 'Italy'],
     stars: 4.7,
     imageUrl: 'assets/steak.jpg',
-    tags: ['steak', 'Lunch', 'BBQ', 'meat', 'main course'],
+    tags: ['steak', 'bbq', 'meat', 'Main Course'],
   },
   {
     id:'3',
@@ -34,7 +34,7 @@ export const sample_foods: Food[] = [
     origins: ['Germany', 'US'],
     stars: 3.5,
     imageUrl: 'assets/burger.jpg',
-    tags: ['FastFood', 'Hamburger', 'Burger', 'Meat'],
+    tags: ['Fast Food', 'Hamburger', 'Burger', 'Meat'],
   },
   {
     id:'4',
@@ -45,7 +45,7 @@ export const sample_foods: Food[] = [
     origins: ['Carraibe'],
     stars: 3.3,
     imageUrl: 'assets/ribs.jpg',
-    tags: ['meat', 'ribs', 'bbq', 'grill', 'main course'],
+    tags: ['meat', 'ribs', 'bbq', 'grill', 'Main Course'],
   },
   {
     id:'5',
@@ -56,7 +56,7 @@ export const sample_foods: Food[] = [
     origins: ['South Africa', 'Africa'],
     stars: 3.0,
     imageUrl: 'assets/shrimps.jpg',
-    tags: ['seafood', 'shrimps', 'fish'],
+    tags: ['seafood', 'shrimps', 'fish', 'Main Course'],
   },
   {
     id: '6',
@@ -67,7 +67,7 @@ export const sample_foods: Food[] = [
     origins: ['Italy'],
     stars: 4.5,
     imageUrl: 'assets/pizza_margherita.jpg',
-    tags: ['pizza', 'italian', 'fast food'],
+    tags: ['pizza', 'italian', 'Fast Food'],
   },
   {
     id: '7',
@@ -78,7 +78,7 @@ export const sample_foods: Food[] = [
     origins: ['Mexico'],
     stars: 4.0,
     imageUrl: 'assets/caesar_salad.jpg',
-    tags: ['salad', 'appetizer', 'vegetarian'],
+    tags: ['salad', 'appetizer', 'vegetarian', 'Main Course'],
   },
   {
     id: '8',
@@ -89,7 +89,7 @@ export const sample_foods: Food[] = [
     origins: ['Japan'],
     stars: 4.8,
     imageUrl: 'assets/sushi_platter.jpg',
-    tags: ['sushi', 'japanese', 'seafood', 'main course','fish'],
+    tags: ['sushi', 'japanese', 'seafood', 'Main Course','fish'],
   },
   {
     id: '9',
@@ -100,7 +100,7 @@ export const sample_foods: Food[] = [
     origins: ['United States'],
     stars: 4.7,
     imageUrl: 'assets/classic_cheesecake.jpg',
-    tags: ['dessert', 'cheesecake', 'classic', 'sweet'],
+    tags: ['Dessert', 'cheesecake', 'classic', 'sweet'],
 }
 
 
