@@ -7,11 +7,12 @@ import { NgFor } from '@angular/common';
 import { FoodPageComponent } from '../food-page/food-page.component';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { NotFoundComponent } from '../../partials/not-found/not-found.component';
 
 @Component({
   selector: 'app-cart-page',
   standalone: true,
-  imports: [TitleComponent, NgFor, FoodPageComponent, RouterModule, CommonModule],
+  imports: [TitleComponent, NgFor, FoodPageComponent, RouterModule, CommonModule, NotFoundComponent],
   templateUrl: './cart-page.component.html',
   styleUrl: './cart-page.component.css'
 })
