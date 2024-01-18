@@ -101,7 +101,43 @@ export const sample_foods: Food[] = [
     stars: 4.7,
     imageUrl: 'assets/classic_cheesecake.jpg',
     tags: ['Dessert', 'cheesecake', 'classic', 'sweet'],
-}
+  },
+  {
+    id: '10',
+    name: 'Vegetarian Supreme Pizza',
+    cookTime: '15-20',
+    price: 14,
+    favorite: false,
+    origins: ['International'],
+    stars: 4.6,
+    imageUrl: 'assets/vegetarian_pizza.jpg',
+    tags: ['Fast Food', 'pizza', 'vegetarian'],
+  },
+  {
+    id: '11',
+    name: 'Cheeseburger',
+    cookTime: '8-12',
+    price: 8,
+    favorite: true,
+    origins: ['United States'],
+    stars: 4.5,
+    imageUrl: 'assets/cheeseburger.jpg',
+    tags: ['Fast Food', 'burger', 'american', 'cheeseburger'],
+  },
+  {
+    id: '12',
+    name: 'Beef Burger',
+    cookTime: '10-15',
+    price: 9,
+    favorite: false,
+    origins: ['International'],
+    stars: 4.3,
+    imageUrl: 'assets/beef_burger.jpg',
+    tags: ['Fast Food', 'burger', 'worldwide'],
+  }
+ 
+ 
+ 
 
 
 
