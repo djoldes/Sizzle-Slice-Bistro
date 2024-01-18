@@ -1,0 +1,40 @@
+/* Apply a bit of styling to the container div */
+div {
+    max-width: 300px;
+    margin: 50px auto; /* Added margin at the top */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align the content */
+  }
+  
+  /* Style labels for better alignment */
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Style input fields */
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Style the login button */
+  button {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Add some hover effect to the button */
+  button:hover {
+    background-color: #a00606;
+  }
+  
